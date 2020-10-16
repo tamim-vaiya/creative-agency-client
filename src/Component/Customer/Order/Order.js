@@ -13,7 +13,7 @@ const Order = () => {
     const onSubmit = (data) => {
         data.email = `${loggedInUser.email}` ;
         data.Design = {title};
-        fetch('http://localhost:5000/NewOrder', {
+        fetch('https://immense-ravine-44875.herokuapp.com/NewOrder', {
             method : 'POST',
             headers : {
                 'Content-Type' : 'application/json'

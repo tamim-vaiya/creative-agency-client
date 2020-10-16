@@ -11,7 +11,7 @@ const Review = () => {
     const { register, handleSubmit, err } = useForm();
     const onSubmit = data => {
         data.email = `${loggedInUser.email}`;
-        fetch('http://localhost:5000/addReview', {
+        fetch('https://immense-ravine-44875.herokuapp.com/addReview', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

@@ -18,7 +18,7 @@ const AddService = () => {
     const { register, handleSubmit,err} = useForm();
     const onSubmit = data =>{ 
         data.email = `${loggedInUser.email}`;
-        fetch('http://localhost:5000/addService', {
+        fetch('https://immense-ravine-44875.herokuapp.com/addService', {
             method : 'POST',
             headers : {
                 'Content-Type' : 'application/json'
